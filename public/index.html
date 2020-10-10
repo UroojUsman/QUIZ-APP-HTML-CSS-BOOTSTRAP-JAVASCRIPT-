@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Quiz-App</title>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class=" home-box custom-box ">
+        <h3>Instructions:</h3>
+        <p>Total number of questions: <span class="total-question" ></span></p>
+        <button type="button" class="btn" onclick="StartQuiz()">Start Quiz</button>
+    </div>
+
+    <div class=" quiz-box custom-box hide ">
+       
+        <div class="question-number">
+            
+        </div>
+        <div class="question-text">
+            
+        </div>
+        <div class="option-container">
+           
+        </div>
+        <div class="next-question-btn">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+        <div class="answer-indicator">
+            
+        </div>
+
+    </div>
+    <div class="result-box custom-box hide ">
+        <h1>Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Total Questions</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Attempt</td>
+                <td><span class="total-attempt"></span></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Your Total Score</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgain()">Try Again</button>
+        <button type="button" class="btn" onclick="GoToHome()">Go To Home</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
